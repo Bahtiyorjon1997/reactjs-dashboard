@@ -8,17 +8,16 @@ const Header = () => {
         </Wrapper>
     )
 }
-
 export default Header
-
 
 const Wrapper = styled.div`
     height: 60px;
     width: 100%;
     background-color: white;
-    margin: 30px 0;
-    border-radius: 5px;
-    margin-top: 18px;
+ 
+    border-radius: 5px; 
+    position: sticky;
+    top: 30px;
 
     h2 {
         margin: 0;

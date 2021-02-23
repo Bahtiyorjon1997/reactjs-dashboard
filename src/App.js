@@ -4,7 +4,6 @@ import Sidebar from './Components/Sidebar'
 import Content from './Components/Content';
 import styled from 'styled-components'
 
-
 const App = () => {
   return (
     <Wrapper>
@@ -29,7 +28,7 @@ const Wrapper = styled.div`
 `;
 
 const ContentWrapper = styled.div` 
-
   margin-right: 25px;
   margin-bottom: 60px;
+  margin-top: 30px; 
 `;

@@ -19,6 +19,9 @@ const Wrapper = styled.div`
     height: 100vh;
     width: 250px;
     background-color: white;
+    position: sticky;    
+    top: 0;
+
     
     h2 {
         margin: 0;
