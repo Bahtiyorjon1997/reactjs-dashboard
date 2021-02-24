@@ -27,26 +27,26 @@ const Header = ({ hide, setHide, ...props }) => {
           <GiHamburgerMenu />
         </IconButton>
 
-        <FiCalendar style={{ padding: "1rem 0 1rem 1rem" }} />
+        <FiCalendar />
 
-        <FiMessageSquare style={{ padding: "1rem 0 1rem 1rem" }} />
+        <FiMessageSquare />
 
-        <FiMail style={{ padding: "1rem 0 1rem 1rem" }} />
+        <FiMail />
 
-        <FiCheckSquare style={{ padding: "1rem 0 1rem 1rem" }} />
+        <FiCheckSquare />
 
-        <FiStar style={{ padding: "1rem 0 1rem 1rem", color: "#ff9f4" }} />
+        <FiStar />
       </LeftIconWrapper>
       <RightIconWrapper>
-        <FiCalendar style={{ padding: "1rem 0 1rem 1rem" }} />
+        <FiCalendar />
 
-        <FiMessageSquare style={{ padding: "1rem 0 1rem 1rem" }} />
+        <FiMessageSquare />
 
-        <FiMail style={{ padding: "1rem 0 1rem 1rem" }} />
+        <FiMail />
 
-        <FiCheckSquare style={{ padding: "1rem 0 1rem 1rem" }} />
+        <FiCheckSquare />
 
-        <FiStar style={{ padding: "1rem 0 1rem 1rem", color: "#ff9f4" }} />
+        <FiStar />
       </RightIconWrapper>
     </HeaderWrapper>
   );
@@ -54,10 +54,14 @@ const Header = ({ hide, setHide, ...props }) => {
 export default Header;
 
 const LeftIconWrapper = styled.div`
+  display: flex;
   padding-left: 15px;
+  align-items: center;
 `;
 const RightIconWrapper = styled.div`
+  display: flex;
   padding-right: 20px;
+  align-items: center;
 `;
 
 const HeaderWrapper = styled.div`

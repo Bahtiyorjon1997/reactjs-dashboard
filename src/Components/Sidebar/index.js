@@ -67,7 +67,7 @@ const SidebarWrapper = styled.div`
   top: 0;
   box-shadow: 5px solid grey;
   overflow-y: hidden;
-  transition: 0.2s;
+  transition: 0.4s;
 
   h2 {
     margin: 0;
