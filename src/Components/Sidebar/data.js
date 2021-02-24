@@ -4,6 +4,8 @@ import {
   FiMail,
   FiCheckSquare,
   FiStar,
+  FiShoppingCart,
+  FiUser,
 } from "react-icons/fi";
 
 export const logo = [
@@ -19,48 +21,48 @@ export const data = [
     id: "1",
     name: "Email",
     urls: "/email/",
-    icon: FiMail,
+    icon: <FiMail />,
   },
   {
     id: "2",
     name: "Chat",
     urls: "/chat/",
-    icon: FiMessageSquare,
+    icon: <FiMessageSquare />,
   },
   {
     id: "3",
     name: "Todo",
     urls: "/Todo/",
-    icon: FiCheckSquare,
+    icon: <FiCheckSquare />,
   },
   {
     id: "4",
     name: "Calendar",
     urls: "/Calendar/",
-    icon: FiCalendar,
+    icon: <FiCalendar />,
   },
   {
     id: "5",
     name: "Invoice",
     urls: "/Invoice/",
-    icon: FiCheckSquare,
+    icon: <FiCheckSquare />,
   },
   {
     id: "6",
     name: "eCommerce",
     urls: "/eCommerce/",
-    icon: FiCheckSquare,
+    icon: <FiShoppingCart />,
   },
   {
     id: "7",
     name: "User",
     urls: "/User/",
-    icon: FiCheckSquare,
+    icon: <FiUser />,
   },
   {
     id: "8",
     name: "Pages",
     urls: "/Pages/",
-    icon: FiCheckSquare,
+    icon: <FiCheckSquare />,
   },
 ];

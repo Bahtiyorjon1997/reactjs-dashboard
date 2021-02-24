@@ -18,8 +18,10 @@ const Sidebar = () => {
       </LogoAndToggle>
       {data.map((item) => (
         <StyledLink to={item.urls}>
-          {item.icon}
-          {item.name}
+          <SideBtn>
+            {item.icon}
+            {item.name}
+          </SideBtn>
         </StyledLink>
       ))}
     </SidebarWrapper>
@@ -28,8 +30,24 @@ const Sidebar = () => {
 
 export default Sidebar;
 
+const SideBtn = styled.div`
+  display: flex;
+  align-items: center;
+  height: 30px;
+  width: 100%;
+  padding: 5px;
+  color: #000000;
+  text-decoration: none;
+
+  &:hover {
+    background-color: blue;
+    color: white;
+  }
+`;
+
 const StyledLink = styled(Link)`
-  display: block;
+  display: flex;
+  align-items: center;
   font-size: 20px;
   margin: 10px 20px;
 `;
