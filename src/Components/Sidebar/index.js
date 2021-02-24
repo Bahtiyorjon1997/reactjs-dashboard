@@ -16,40 +16,45 @@ const Sidebar = () => {
         </ImgWrap>
         <ToggleBtn />
       </LogoAndToggle>
-      {data.map((item) => (
-        <StyledLink to={item.urls}>
-          <SideBtn>
+      <NavElements>
+        {data.map((item) => (
+          <StyledLink to={item.urls}>
             {item.icon}
-            {item.name}
-          </SideBtn>
-        </StyledLink>
-      ))}
+            <span>{item.name}</span>
+          </StyledLink>
+        ))}
+      </NavElements>
     </SidebarWrapper>
   );
 };
 
 export default Sidebar;
 
-const SideBtn = styled.div`
+const NavElements = styled.div`
   display: flex;
-  align-items: center;
-  height: 30px;
-  width: 100%;
-  padding: 5px;
-  color: #000000;
-  text-decoration: none;
-
-  &:hover {
-    background-color: blue;
-    color: white;
-  }
+  flex-direction: column;
 `;
 
 const StyledLink = styled(Link)`
-  display: flex;
-  align-items: center;
+  height: 25px;
   font-size: 20px;
-  margin: 10px 20px;
+  margin: 0 20px;
+  color: black;
+  text-decoration: none;
+  align-items: center;
+  display: flex;
+  transition: 0.4s;
+  padding: 10px;
+
+  span {
+    margin-left: 20px;
+  }
+
+  &:hover {
+    border-radius: 5px;
+    transition: 0.4s;
+    margin: 0 25px;
+  }
 `;
 
 const SidebarWrapper = styled.div`
