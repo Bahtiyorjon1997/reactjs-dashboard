@@ -1,7 +1,6 @@
 import React from "react";
 import styled from "styled-components";
 import { logo, data } from "./data";
-import { ToggleBtn } from "./ToggleBtn";
 import { Link } from "react-router-dom";
 
 const Sidebar = () => {
@@ -14,7 +13,6 @@ const Sidebar = () => {
           <img src={logo[0].icon} alt="logo" />
           <span>{logo[0].label}</span>
         </ImgWrap>
-        <ToggleBtn />
       </LogoAndToggle>
       <NavElements>
         {data.map((item) => (
