@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import "./data";
 import { Icons } from "./data";
+
 import {
   FiCalendar,
   FiMessageSquare,
@@ -9,36 +10,60 @@ import {
   FiCheckSquare,
   FiStar,
 } from "react-icons/fi";
+
 import { GiHamburgerMenu } from "react-icons/gi";
 import { IconButton } from "@material-ui/core";
 
 const Header = ({ hide, setHide, ...props }) => {
   return (
     <HeaderWrapper {...props}>
-      <IconButton
-        onClick={() => {
-          setHide(!hide);
-        }}
-        className="ml-2"
-      >
-        <GiHamburgerMenu />
-      </IconButton>
+      <LeftIconWrapper>
+        <IconButton
+          onClick={() => {
+            setHide(!hide);
+          }}
+          className="ml-2"
+        >
+          <GiHamburgerMenu />
+        </IconButton>
 
-      <FiCalendar style={{ padding: "1rem 0 1rem 1rem" }} />
+        <FiCalendar style={{ padding: "1rem 0 1rem 1rem" }} />
 
-      <FiMessageSquare style={{ padding: "1rem 0 1rem 1rem" }} />
+        <FiMessageSquare style={{ padding: "1rem 0 1rem 1rem" }} />
 
-      <FiMail style={{ padding: "1rem 0 1rem 1rem" }} />
+        <FiMail style={{ padding: "1rem 0 1rem 1rem" }} />
 
-      <FiCheckSquare style={{ padding: "1rem 0 1rem 1rem" }} />
+        <FiCheckSquare style={{ padding: "1rem 0 1rem 1rem" }} />
 
-      <FiStar style={{ padding: "1rem 0 1rem 1rem", color: "#ff9f4" }} />
+        <FiStar style={{ padding: "1rem 0 1rem 1rem", color: "#ff9f4" }} />
+      </LeftIconWrapper>
+      <RightIconWrapper>
+        <FiCalendar style={{ padding: "1rem 0 1rem 1rem" }} />
+
+        <FiMessageSquare style={{ padding: "1rem 0 1rem 1rem" }} />
+
+        <FiMail style={{ padding: "1rem 0 1rem 1rem" }} />
+
+        <FiCheckSquare style={{ padding: "1rem 0 1rem 1rem" }} />
+
+        <FiStar style={{ padding: "1rem 0 1rem 1rem", color: "#ff9f4" }} />
+      </RightIconWrapper>
     </HeaderWrapper>
   );
 };
 export default Header;
 
+const LeftIconWrapper = styled.div`
+  padding-left: 15px;
+`;
+const RightIconWrapper = styled.div`
+  padding-right: 20px;
+`;
+
 const HeaderWrapper = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   height: 60px;
   width: 100%;
   background-color: white;
@@ -50,9 +75,6 @@ const HeaderWrapper = styled.div`
   margin-bottom: 1rem;
   padding-top: 0;
   margin-top: 0;
-
-  display: flex;
-  align-items: center;
 
   h2 {
     margin: 0;
