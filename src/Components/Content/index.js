@@ -8,8 +8,13 @@ const Content = () => {
       <Switch>
         <Route path="/" render={() => <h2>Content</h2>} exact />
         <Route path="/email" render={() => <h2>Email</h2>} />
-        <Route path="/email2" render={() => <h2>Email2</h2>} />
-        <Route path="/email3" render={() => <h2>Email3</h2>} />
+        <Route path="/chat" render={() => <h2>Chat</h2>} />
+        <Route path="/todo" render={() => <h2>ToDo</h2>} />
+        <Route path="/calendar" render={() => <h2>Calendar</h2>} />
+        <Route path="/ecommerce" render={() => <h2>Ecommerce</h2>} />
+        <Route path="/user" render={() => <h2>User</h2>} />
+        <Route path="/pages" render={() => <h2>Pages</h2>} />
+        <Route path="/invoice" render={() => <h2>InVoice</h2>} />
         <Route path="/404" render={() => <h2>No PageFound</h2>} />
         <Redirect to="/404" />
       </Switch>

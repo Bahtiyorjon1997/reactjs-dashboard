@@ -44,7 +44,7 @@ const HeaderWrapper = styled.div`
   background-color: white;
   font-size: 22px;
   border-radius: 5px;
-  position: sticky;
+  position: sticky; /* this is how we keep things stick at some parts of the page*/
   top: 30px;
   text-align: left;
   margin-bottom: 1rem;

@@ -39,12 +39,16 @@ const StyledLink = styled(Link)`
   height: 25px;
   font-size: 20px;
   margin: 0 20px;
-  color: black;
+  color: #625f;
   text-decoration: none;
   align-items: center;
   display: flex;
   transition: 0.4s;
   padding: 10px;
+
+  /* &:hover {
+    background-color: blueviolet;
+  } */
 
   span {
     margin-left: 20px;
