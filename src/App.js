@@ -22,6 +22,7 @@ const App = () => {
 export default App;
 
 const AppWrapper = styled.div`
+  font-family: "Montserrat", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif !important;
   background-color: #f8f8f8;
   display: grid;
   grid-template-columns: 250px 1fr;

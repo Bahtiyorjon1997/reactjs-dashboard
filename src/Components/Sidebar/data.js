@@ -46,6 +46,7 @@ export const data = [
     name: "Invoice",
     urls: "/Invoice/",
     icon: <FiCheckSquare />,
+    subItems: ["List", "Preview", "Edit", "Add"],
   },
   {
     id: "6",

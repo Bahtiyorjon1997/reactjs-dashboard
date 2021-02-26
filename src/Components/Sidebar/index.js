@@ -1,25 +1,57 @@
-import React from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
 import { logo, data } from "./data";
 import { Link } from "react-router-dom";
+import { Collapse } from "@material-ui/core";
+import { FiChevronDown, FiChevronRight, FiCheck } from "react-icons/fi";
 
 const Sidebar = () => {
+  const [shows, setShows] = useState({
+    Invoice: false,
+    Pages: false,
+  });
+  const [iconPic, setIconPic] = useState(false);
+
+  const subIcon = iconPic ? <FiChevronDown /> : <FiChevronRight />;
+
   console.log("data", data);
+
+  const handleMenu = (item) => {
+    setShows({ ...shows, [item.name]: !shows[item.name] });
+    setIconPic(!iconPic);
+  };
 
   return (
     <SidebarWrapper>
       <LogoAndToggle>
         <ImgWrap>
-          <img src={logo[0].icon} alt="logo" />
-          <span>{logo[0].label}</span>
+          <List>
+            <img src={logo[0].icon} alt="logo" />
+            <span>{logo[0].label}</span>
+          </List>
         </ImgWrap>
       </LogoAndToggle>
       <NavElements>
         {data.map((item) => (
-          <StyledLink to={item.urls}>
-            {item.icon}
-            <span>{item.name}</span>
-          </StyledLink>
+          <>
+            <StyledLink to={item.urls} onClick={() => handleMenu(item)}>
+              {item.icon}
+              <span>{item.name}</span>
+              <span className="icon-span">{item.subItems && subIcon}</span>
+            </StyledLink>
+            {item.subItems && (
+              <Collapse in={shows[item.name]} timeout="auto" unmountOnExit>
+                {item.subItems.map((subItem) => (
+                  <StyledLink to={item.urls}>
+                    <span>
+                      <FiCheck />
+                    </span>
+                    <span>{subItem}</span>
+                  </StyledLink>
+                ))}
+              </Collapse>
+            )}
+          </>
         ))}
       </NavElements>
     </SidebarWrapper>
@@ -33,10 +65,13 @@ const NavElements = styled.div`
   flex-direction: column;
 `;
 
+const List = styled.div``;
+
 const StyledLink = styled(Link)`
   height: 25px;
-  font-size: 20px;
-  margin: 0 20px;
+  font-size: 15px;
+  font-weight: 500;
+  margin: 0 17px;
   color: #625f;
   text-decoration: none;
   align-items: center;
@@ -50,6 +85,9 @@ const StyledLink = styled(Link)`
 
   span {
     margin-left: 20px;
+  }
+  .icon-span {
+    padding-left: 50px;
   }
 
   &:hover {
@@ -82,7 +120,7 @@ const SidebarWrapper = styled.div`
 
 const ImgWrap = styled.div`
   span {
-    font-size: 23px;
+    font-size: 20px;
     font-family: "Krona One", sans-serif;
     color: blue;
   }
