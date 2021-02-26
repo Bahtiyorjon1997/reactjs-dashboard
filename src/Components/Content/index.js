@@ -42,8 +42,8 @@ const Wrapper = styled.div`
   border-radius: 7px;
 
   display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: repeat(20, 1fr);
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(8, 1fr);
   grid-gap: 25px;
 
   h2 {
@@ -62,26 +62,24 @@ const Wrapper = styled.div`
   }
 
   .a {
-    grid-column: 1/7;
-    grid-row: 1/4;
+    grid-column: 1/5;
+    grid-row: 1/3;
     background-color: #006ce8;
   }
   .b {
-    grid-column: 7/10;
-    grid-row: 1/4;
+    grid-column: 5/7;
+    grid-row: 1/3;
   }
   .c {
-    grid-column: 10/13;
-    grid-row: 1/4;
+    grid-column: 7/9;
+    grid-row: 1/3;
   }
   .d {
     grid-column: 1/5;
-    grid-row: 4/7;
+    grid-row: 3/7;
   }
   .e {
     grid-column: 5/9;
     grid-row: 3/7;
-  }
-  .f {
   }
 `;
