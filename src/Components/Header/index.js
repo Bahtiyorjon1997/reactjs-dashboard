@@ -26,27 +26,46 @@ const Header = ({ hide, setHide, ...props }) => {
         >
           <GiHamburgerMenu />
         </IconButton>
+        <span>
+          <FiCalendar />
+        </span>
 
-        <FiCalendar />
+        <span>
+          <FiMessageSquare />
+        </span>
 
-        <FiMessageSquare />
+        <span>
+          <FiMail />
+        </span>
 
-        <FiMail />
+        <span>
+          <FiCheckSquare />
+        </span>
 
-        <FiCheckSquare />
-
-        <FiStar />
+        <span>
+          <FiStar />
+        </span>
       </LeftIconWrapper>
       <RightIconWrapper>
-        <FiCalendar />
+        <span>
+          <FiCalendar />
+        </span>
 
-        <FiMessageSquare />
+        <span>
+          <FiMessageSquare />
+        </span>
 
-        <FiMail />
+        <span>
+          <FiMail />
+        </span>
 
-        <FiCheckSquare />
+        <span>
+          <FiCheckSquare />
+        </span>
 
-        <FiStar />
+        <span>
+          <FiStar />
+        </span>
       </RightIconWrapper>
     </HeaderWrapper>
   );
@@ -60,7 +79,7 @@ const LeftIconWrapper = styled.div`
 `;
 const RightIconWrapper = styled.div`
   display: flex;
-  padding-right: 20px;
+  padding-right: 30px;
   align-items: center;
 `;
 
@@ -84,5 +103,8 @@ const HeaderWrapper = styled.div`
     margin: 0;
     padding: 10px;
     text-align: center;
+  }
+  span {
+    padding-left: 12px;
   }
 `;

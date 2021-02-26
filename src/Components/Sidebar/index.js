@@ -79,22 +79,19 @@ const StyledLink = styled(Link)`
   transition: 0.4s;
   padding: 10px;
 
-  /* &:hover {
-    background-color: blueviolet;
-  } */
-
   span {
     margin-left: 20px;
   }
   .icon-span {
     position: absolute;
-    right: 10px;
+    right: 20px;
   }
 
   &:hover {
     border-radius: 5px;
     transition: 0.4s;
     margin: 0 25px;
+    border-bottom: 1px solid #0000ff;
   }
 `;
 
