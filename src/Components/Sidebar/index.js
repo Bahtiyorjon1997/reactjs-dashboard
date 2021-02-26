@@ -89,9 +89,9 @@ const StyledLink = styled(Link)`
 
   &:hover {
     border-radius: 5px;
-    transition: 0.4s;
     margin: 0 25px;
-    border-bottom: 1px solid #0000ff;
+    border-bottom: 0.8px solid #0000ff;
+    transition: 0.6s;
   }
 `;
 
