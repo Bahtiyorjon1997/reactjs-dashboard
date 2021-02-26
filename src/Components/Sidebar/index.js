@@ -87,7 +87,8 @@ const StyledLink = styled(Link)`
     margin-left: 20px;
   }
   .icon-span {
-    padding-left: 50px;
+    position: absolute;
+    right: 10px;
   }
 
   &:hover {

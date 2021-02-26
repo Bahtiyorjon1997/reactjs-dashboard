@@ -4,9 +4,9 @@ import {
   FiMail,
   FiCheckSquare,
   FiStar,
-  FiShoppingCart,
   FiUser,
 } from "react-icons/fi";
+import { BiShoppingBag } from "react-icons/bi";
 
 export const logo = [
   {
@@ -52,18 +52,21 @@ export const data = [
     id: "6",
     name: "eCommerce",
     urls: "/eCommerce/",
-    icon: <FiShoppingCart />,
+    icon: <BiShoppingBag />,
+    subItems: ["List", "Preview", "Edit", "Add"],
   },
   {
     id: "7",
     name: "User",
     urls: "/User/",
     icon: <FiUser />,
+    subItems: ["List", "Preview", "Edit", "Add"],
   },
   {
     id: "8",
     name: "Pages",
     urls: "/Pages/",
     icon: <FiCheckSquare />,
+    subItems: ["List", "Preview", "Edit", "Add"],
   },
 ];
