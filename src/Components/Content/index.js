@@ -64,7 +64,6 @@ const Wrapper = styled.div`
   .a {
     grid-column: 1/5;
     grid-row: 1/3;
-    background-color: #006ce8;
   }
   .b {
     grid-column: 5/7;
