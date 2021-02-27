@@ -98,6 +98,7 @@ const HeaderWrapper = styled.div`
   margin-bottom: 1rem;
   padding-top: 0;
   margin-top: 0;
+  box-shadow: 0 10px 20px -4px #00002222;
 
   h2 {
     margin: 0;
