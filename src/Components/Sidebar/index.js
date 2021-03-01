@@ -125,6 +125,7 @@ const SidebarWrapper = styled.div`
   position: sticky;
   top: 0;
   box-shadow: 5px solid grey;
+  margin-bottom: 0;
   overflow-y: scroll;
   transition: 0.4s;
   padding-bottom: 20px;

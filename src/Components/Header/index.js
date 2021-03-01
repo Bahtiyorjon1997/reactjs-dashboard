@@ -72,6 +72,10 @@ const Header = ({ hide, setHide, ...props }) => {
 };
 export default Header;
 
+const ShadowWrapper = styled.div`
+  width: 100%;
+`;
+
 const LeftIconWrapper = styled.div`
   display: flex;
   padding-left: 15px;
