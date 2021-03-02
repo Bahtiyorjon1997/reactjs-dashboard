@@ -34,7 +34,7 @@ const BsTable = () => {
               <td>{item.post}</td>
               <td>{item.email}</td>
               <td>{item.city}</td>
-              <td>{item.date}</td>
+              <td>{item.start}</td>
               <td>{item.start}</td>
               <td>{item.age}</td>
               <td>{item.experience}</td>
