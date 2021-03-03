@@ -71,7 +71,7 @@ const ButtonWrapper = styled.div`
     background-color: white;
     border: 1px solid rgba(137, 43, 226, 0.795);
     color: blueviolet;
-    padding: 12px 10px;
+    padding: 10px 10px;
     border-radius: 5px;
     font-weight: 500;
     font-family: Montserrat, Helvetica, Arial, serif;
