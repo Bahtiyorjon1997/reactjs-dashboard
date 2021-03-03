@@ -64,7 +64,7 @@ const ButtonWrapper = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  width: 32%;
+  width: 35%;
   padding: 20px;
 
   button {
@@ -74,6 +74,8 @@ const ButtonWrapper = styled.div`
     padding: 12px 10px;
     border-radius: 5px;
     font-weight: 500;
+    font-family: Montserrat, Helvetica, Arial, serif;
+    cursor: pointer;
   }
   button:hover {
     background-color: rgba(231, 231, 240, 0.404);
@@ -98,6 +100,9 @@ const TableWrapper = styled.div`
       tr th {
         padding: 20px;
       }
+    }
+    tr:hover {
+      background-color: #f8f8f8;
     }
 
     thead tr {
