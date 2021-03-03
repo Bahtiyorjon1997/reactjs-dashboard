@@ -28,7 +28,10 @@ const BsTable = () => {
             <tr>
               <td>{item.id}</td>
               <td>
-                <img src={item.img} style={{ height: 40 }} />
+                <img
+                  src={item.img}
+                  style={{ height: 45, borderRadius: "50%", width: 50 }}
+                />
               </td>
               <td>{item.name}</td>
               <td>{item.post}</td>
@@ -91,6 +94,10 @@ const TableWrapper = styled.div`
   tbody {
     tr td {
       padding: 20px;
+    }
+
+    tr {
+      border-bottom: 1px solid rgba(0, 0, 0, 0.1);
     }
     font-size: 0.8rem;
   }

@@ -1,6 +1,6 @@
 export const data = [
   {
-    id: 2,
+    id: 1,
     img:
       "https://img.favpng.com/25/7/23/computer-icons-user-profile-avatar-image-png-favpng-LFqDyLRhe3PBXM0sx2LufsGFU.jpg",
     name: "Korie Ocrevy",
@@ -28,7 +28,7 @@ export const data = [
     status: "Professional",
   },
   {
-    id: 2,
+    id: 3,
     img:
       "https://img.favpng.com/25/7/23/computer-icons-user-profile-avatar-image-png-favpng-LFqDyLRhe3PBXM0sx2LufsGFU.jpg",
     name: "Korie Ocrevy",
@@ -42,7 +42,7 @@ export const data = [
     status: "Professional",
   },
   {
-    id: 2,
+    id: 4,
     img:
       "https://img.favpng.com/25/7/23/computer-icons-user-profile-avatar-image-png-favpng-LFqDyLRhe3PBXM0sx2LufsGFU.jpg",
     name: "Korie Ocrevy",
@@ -56,7 +56,7 @@ export const data = [
     status: "Professional",
   },
   {
-    id: 2,
+    id: 5,
     img:
       "https://img.favpng.com/25/7/23/computer-icons-user-profile-avatar-image-png-favpng-LFqDyLRhe3PBXM0sx2LufsGFU.jpg",
     name: "Korie Ocrevy",
@@ -70,7 +70,7 @@ export const data = [
     status: "Professional",
   },
   {
-    id: 2,
+    id: 6,
     img:
       "https://img.favpng.com/25/7/23/computer-icons-user-profile-avatar-image-png-favpng-LFqDyLRhe3PBXM0sx2LufsGFU.jpg",
     name: "Korie Ocrevy",
@@ -84,7 +84,7 @@ export const data = [
     status: "Professional",
   },
   {
-    id: 2,
+    id: 7,
     img:
       "https://img.favpng.com/25/7/23/computer-icons-user-profile-avatar-image-png-favpng-LFqDyLRhe3PBXM0sx2LufsGFU.jpg",
     name: "Korie Ocrevy",
@@ -98,7 +98,35 @@ export const data = [
     status: "Professional",
   },
   {
-    id: 2,
+    id: 8,
+    img:
+      "https://img.favpng.com/25/7/23/computer-icons-user-profile-avatar-image-png-favpng-LFqDyLRhe3PBXM0sx2LufsGFU.jpg",
+    name: "Korie Ocrevy",
+    post: "Nuclear Power Engineer",
+    email: "kocrevy0@thetimes.co.uk",
+    city: "Krasnosilka",
+    start: "09/23/2016",
+    salary: "$23896.35",
+    age: "33",
+    experience: "1 year",
+    status: "Professional",
+  },
+  {
+    id: 9,
+    img:
+      "https://img.favpng.com/25/7/23/computer-icons-user-profile-avatar-image-png-favpng-LFqDyLRhe3PBXM0sx2LufsGFU.jpg",
+    name: "Korie Ocrevy",
+    post: "Nuclear Power Engineer",
+    email: "kocrevy0@thetimes.co.uk",
+    city: "Krasnosilka",
+    start: "09/23/2016",
+    salary: "$23896.35",
+    age: "33",
+    experience: "1 year",
+    status: "Professional",
+  },
+  {
+    id: 10,
     img:
       "https://img.favpng.com/25/7/23/computer-icons-user-profile-avatar-image-png-favpng-LFqDyLRhe3PBXM0sx2LufsGFU.jpg",
     name: "Korie Ocrevy",
