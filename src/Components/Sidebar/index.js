@@ -41,7 +41,7 @@ const Sidebar = () => {
                 <>
                   <StyledLink to={item.urls} onClick={() => handleMenu(item)}>
                     {item.icon}
-                    <span>{item.name}</span>
+                    <span className="name">{item.name}</span>
                     <span class="icon-span">
                       {item.subItems &&
                         (shows[item.name] ? (
@@ -105,6 +105,10 @@ const StyledLink = styled(Link)`
 
   span {
     margin-left: 20px;
+  }
+  span::active {
+    background-color: blueviolet;
+    color: white;
   }
   .icon-span {
     position: absolute;
