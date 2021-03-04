@@ -134,11 +134,15 @@ const TableWrapper = styled.div`
     tr {
       border-bottom: 1px solid rgba(0, 0, 0, 0.1);
     }
+
+    tr:nth-child(even) {
+      background-color: #f8f8f8;
+    }
     font-size: 0.8rem;
   }
 
   .status {
-    background-color: blue;
+    background-color: #7367f0;
     padding: 7px;
     color: white;
     border-radius: 50px;

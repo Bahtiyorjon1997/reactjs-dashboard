@@ -21,7 +21,10 @@ const DefaultTemplate = () => {
             <Route path="/" render={() => <h2>Content</h2>} exact />
 
             {routes.map((route, i) => (
-              <Route path={`/${route.path}`} component={route.component} />
+              <Route
+                path={`/${route.path}`}
+                component={route.component}
+              />
             ))}
 
             <Route path="/404" render={() => <h2>No PageFound</h2>} />
@@ -47,7 +50,7 @@ const AppWrapper = styled.div`
   display: grid;
   grid-template-columns: 270px 1fr;
   grid-gap: 30px;
-  transition: 0.2s;
+  transition: 0.2s; 
 
   &.hide {
     grid-template-columns: 0 1fr !important;

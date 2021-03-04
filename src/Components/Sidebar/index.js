@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import styled from "styled-components";
 import { logo, data } from "./data";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { Collapse } from "@material-ui/core";
 import {
   FiChevronDown,
@@ -39,7 +39,15 @@ const Sidebar = () => {
               <span className="label">{item.label}</span>
               {item.props.map((item) => (
                 <>
-                  <StyledLink to={item.urls} onClick={() => handleMenu(item)}>
+                  <StyledLink
+                    to={item.urls}
+                    onClick={() => handleMenu(item)}
+                    activeStyle={{
+                      borderRadius: "5px",
+                      background: "#7367f0",
+                      color: "white",
+                    }}
+                  >
                     {item.icon}
                     <span className="name">{item.name}</span>
                     <span class="icon-span">
@@ -91,7 +99,7 @@ const List = styled.div`
   }
 `;
 
-const StyledLink = styled(Link)`
+const StyledLink = styled(NavLink)`
   height: 25px;
   font-size: 15px;
   font-weight: 500;
